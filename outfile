@@ -1,0 +1,252 @@
+reading the mesh ...
+reading the mesh ...
+Mesh read in 0.010000 seconds
+creating connectivities ...
+Mesh read in 0.000000 seconds
+creating connectivities ...
+Edges created in 1.000000e-02 seconds
+Connections created in 0.000000e+00 seconds
+64 cells 
+144 boundaries ...
+DG begins ...
+Edges created in 1.000000e-02 seconds
+Connections created in 0.000000e+00 seconds
+64 cells 
+144 boundaries ...
+DG begins ...
+Volume cells created in 0.000000e+00 sec 
+Volume cells created in 0.000000e+00 sec 
+Boundary cells created in 0.000000e+00 sec 
+dg running -- final time = 0.200000...
+Error in density L1 norm 3.655835e-03
+Boundary cells created in 0.000000e+00 sec 
+dg running -- final time = 0.200000...
+Error in density L1 norm 3.655835e-03
+Error in density Linf norm 1.187002e-01
+64 144 iter      1 dt  3.77358E-03 T  3.77358E-03 ||rhs|| =   1.53884E-01 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 1.024575e-01
+64 144 iter      1 dt  3.77358E-03 T  3.77358E-03 ||rhs|| =   1.49800E-01 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 2.498428e-01
+64 144 iter      2 dt  3.77358E-03 T  7.54717E-03 ||rhs|| =   1.61935E-01 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 1.404125e-01
+64 144 iter      2 dt  3.77358E-03 T  7.54717E-03 ||rhs|| =   1.24266E-01 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 1.968986e-01
+Error in density Linf norm 3.573480e-01
+64 144 iter      3 dt  3.77358E-03 T  1.13208E-02 ||rhs|| =   1.35426E-01 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+64 144 iter      3 dt  3.77358E-03 T  1.13208E-02 ||rhs|| =   1.15450E-01 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 4.456568e-01
+64 144 iter      4 dt  3.77358E-03 T  1.50943E-02 ||rhs|| =   1.15329E-01 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 2.620534e-01
+64 144 iter      4 dt  3.77358E-03 T  1.50943E-02 ||rhs|| =   1.09216E-01 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 5.183672e-01
+64 144 iter      5 dt  3.77358E-03 T  1.88679E-02 ||rhs|| =   1.00191E-01 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 3.280545e-01
+64 144 iter      5 dt  3.77358E-03 T  1.88679E-02 ||rhs|| =   1.05163E-01 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 5.783931e-01
+64 144 iter      6 dt  3.77358E-03 T  2.26415E-02 ||rhs|| =   8.89803E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 3.930073e-01
+64 144 iter      6 dt  3.77358E-03 T  2.26415E-02 ||rhs|| =   1.02793E-01 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 6.280939e-01
+64 144 iter      7 dt  3.77358E-03 T  2.64151E-02 ||rhs|| =   8.09030E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 4.552955e-01
+64 144 iter      7 dt  3.77358E-03 T  2.64151E-02 ||rhs|| =   1.01576E-01 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 6.693793e-01
+64 144 iter      8 dt  3.77358E-03 T  3.01887E-02 ||rhs|| =   7.52910E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 5.135792e-01
+64 144 iter      8 dt  3.77358E-03 T  3.01887E-02 ||rhs|| =   1.01018E-01 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 7.037950e-01
+64 144 iter      9 dt  3.77358E-03 T  3.39623E-02 ||rhs|| =   7.15566E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 5.667868e-01
+64 144 iter      9 dt  3.77358E-03 T  3.39623E-02 ||rhs|| =   1.00715E-01 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 6.141005e-01
+Error in density Linf norm 7.325921e-01
+64 144 iter     10 dt  3.77358E-03 T  3.77358E-02 ||rhs|| =   6.91892E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+64 144 iter     10 dt  3.77358E-03 T  3.77358E-02 ||rhs|| =   1.00370E-01 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 7.567836e-01
+64 144 iter     11 dt  3.77358E-03 T  4.15094E-02 ||rhs|| =   6.77700E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 6.549379e-01
+64 144 iter     11 dt  3.77358E-03 T  4.15094E-02 ||rhs|| =   9.97884E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 6.889314e-01
+Error in density Linf norm 7.771900e-01
+64 144 iter     12 dt  3.77358E-03 T  4.52830E-02 ||rhs|| =   6.69812E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+64 144 iter     12 dt  3.77358E-03 T  4.52830E-02 ||rhs|| =   9.88653E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 7.159048e-01
+Error in density Linf norm 7.944763e-01
+64 144 iter     13 dt  3.77358E-03 T  4.90566E-02 ||rhs|| =   6.66017E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+64 144 iter     13 dt  3.77358E-03 T  4.90566E-02 ||rhs|| =   9.75673E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 8.091819e-01
+64 144 iter     14 dt  3.77358E-03 T  5.28302E-02 ||rhs|| =   6.64914E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 7.428575e-01
+64 144 iter     14 dt  3.77358E-03 T  5.28302E-02 ||rhs|| =   9.59138E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  1.00000E-02 cpuleft =  3.90000E-01
+Error in density Linf norm 8.217452e-01
+64 144 iter     15 dt  3.77358E-03 T  5.66038E-02 ||rhs|| =   6.65714E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 7.723421e-01
+64 144 iter     15 dt  3.77358E-03 T  5.66038E-02 ||rhs|| =   9.39608E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 8.325227e-01
+64 144 iter     16 dt  3.77358E-03 T  6.03774E-02 ||rhs|| =   6.68031E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 7.987626e-01
+64 144 iter     16 dt  3.77358E-03 T  6.03774E-02 ||rhs|| =   9.17864E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 8.418049e-01
+64 144 iter     17 dt  3.77358E-03 T  6.41509E-02 ||rhs|| =   6.71718E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 8.223127e-01
+64 144 iter     17 dt  3.77358E-03 T  6.41509E-02 ||rhs|| =   8.94802E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 8.431906e-01
+Error in density Linf norm 8.498294e-01
+64 144 iter     18 dt  3.77358E-03 T  6.79245E-02 ||rhs|| =   6.76722E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+64 144 iter     18 dt  3.77358E-03 T  6.79245E-02 ||rhs|| =   8.71332E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 8.615952e-01
+Error in density Linf norm 8.567908e-01
+64 144 iter     19 dt  3.77358E-03 T  7.16981E-02 ||rhs|| =   6.82999E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+64 144 iter     19 dt  3.77358E-03 T  7.16981E-02 ||rhs|| =   8.48309E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 8.777233e-01
+Error in density Linf norm 8.628490e-01
+64 144 iter     20 dt  3.77358E-03 T  7.54717E-02 ||rhs|| =   6.90454E-02 ||Erhs|| = 0.00000E+00 cpu  0.00000E+00 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+64 144 iter     20 dt  3.77358E-03 T  7.54717E-02 ||rhs|| =   8.26475E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 8.681360e-01
+64 144 iter     21 dt  3.77358E-03 T  7.92453E-02 ||rhs|| =   6.98919E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  1.00000E-02 cpuleft =  3.20000E-01
+Error in density Linf norm 8.917676e-01
+64 144 iter     21 dt  3.77358E-03 T  7.92453E-02 ||rhs|| =   8.06421E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.039142e-01
+Error in density Linf norm 8.727614e-01
+64 144 iter     22 dt  3.77358E-03 T  8.30189E-02 ||rhs|| =   7.08151E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+64 144 iter     22 dt  3.77358E-03 T  8.30189E-02 ||rhs|| =   7.88564E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 8.768162e-01
+64 144 iter     23 dt  3.77358E-03 T  8.67925E-02 ||rhs|| =   7.17844E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.143419e-01
+64 144 iter     23 dt  3.77358E-03 T  8.67925E-02 ||rhs|| =   7.73135E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 8.862022e-01
+64 144 iter     24 dt  3.77358E-03 T  9.05660E-02 ||rhs|| =   7.27651E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.232205e-01
+64 144 iter     24 dt  3.77358E-03 T  9.05660E-02 ||rhs|| =   7.60185E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 8.951955e-01
+64 144 iter     25 dt  3.77358E-03 T  9.43396E-02 ||rhs|| =   7.37206E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.307104e-01
+64 144 iter     25 dt  3.77358E-03 T  9.43396E-02 ||rhs|| =   7.49605E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.030301e-01
+64 144 iter     26 dt  3.77358E-03 T  9.81132E-02 ||rhs|| =   7.46144E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.369618e-01
+64 144 iter     26 dt  3.77358E-03 T  9.81132E-02 ||rhs|| =   7.41147E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.098237e-01
+64 144 iter     27 dt  3.77358E-03 T  1.01887E-01 ||rhs|| =   7.54118E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.421146e-01
+64 144 iter     27 dt  3.77358E-03 T  1.01887E-01 ||rhs|| =   7.34463E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.156854e-01
+64 144 iter     28 dt  3.77358E-03 T  1.05660E-01 ||rhs|| =   7.60817E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.462984e-01
+64 144 iter     28 dt  3.77358E-03 T  1.05660E-01 ||rhs|| =   7.29138E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.496322e-01
+64 144 iter     29 dt  3.77358E-03 T  1.09434E-01 ||rhs|| =   7.24723E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.207162e-01
+64 144 iter     29 dt  3.77358E-03 T  1.09434E-01 ||rhs|| =   7.65973E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.522253e-01
+64 144 iter     30 dt  3.77358E-03 T  1.13208E-01 ||rhs|| =   7.20777E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.250086e-01
+64 144 iter     30 dt  3.77358E-03 T  1.13208E-01 ||rhs|| =   7.69369E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.541768e-01
+64 144 iter     31 dt  3.77358E-03 T  1.16981E-01 ||rhs|| =   7.16886E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.286474e-01
+64 144 iter     31 dt  3.77358E-03 T  1.16981E-01 ||rhs|| =   7.70847E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.555768e-01
+64 144 iter     32 dt  3.77358E-03 T  1.20755E-01 ||rhs|| =   7.12694E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.317099e-01
+64 144 iter     32 dt  3.77358E-03 T  1.20755E-01 ||rhs|| =   7.70313E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.571414e-01
+Error in density Linf norm 9.342664e-01
+64 144 iter     33 dt  3.77358E-03 T  1.24528E-01 ||rhs|| =   7.67735E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+64 144 iter     33 dt  3.77358E-03 T  1.24528E-01 ||rhs|| =   7.07918E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.628602e-01
+Error in density Linf norm 9.376142e-01
+64 144 iter     34 dt  3.77358E-03 T  1.28302E-01 ||rhs|| =   7.63147E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+64 144 iter     34 dt  3.77358E-03 T  1.28302E-01 ||rhs|| =   7.02366E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.672948e-01
+Error in density Linf norm 9.456991e-01
+64 144 iter     35 dt  3.77358E-03 T  1.32075E-01 ||rhs|| =   7.56649E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+64 144 iter     35 dt  3.77358E-03 T  1.32075E-01 ||rhs|| =   6.95951E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.522747e-01
+64 144 iter     36 dt  3.77358E-03 T  1.35849E-01 ||rhs|| =   7.48401E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.706011e-01
+64 144 iter     36 dt  3.77358E-03 T  1.35849E-01 ||rhs|| =   6.88693E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.574961e-01
+64 144 iter     37 dt  3.77358E-03 T  1.39623E-01 ||rhs|| =   7.38617E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.729247e-01
+64 144 iter     37 dt  3.77358E-03 T  1.39623E-01 ||rhs|| =   6.80731E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.744005e-01
+Error in density Linf norm 9.615119e-01
+64 144 iter     38 dt  3.77358E-03 T  1.43396E-01 ||rhs|| =   7.27561E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+64 144 iter     38 dt  3.77358E-03 T  1.43396E-01 ||rhs|| =   6.72321E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.751524e-01
+Error in density Linf norm 9.644638e-01
+64 144 iter     39 dt  3.77358E-03 T  1.47170E-01 ||rhs|| =   7.15535E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+64 144 iter     39 dt  3.77358E-03 T  1.47170E-01 ||rhs|| =   6.63834E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.664855e-01
+64 144 iter     40 dt  3.77358E-03 T  1.50943E-01 ||rhs|| =   7.02864E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.752935e-01
+64 144 iter     40 dt  3.77358E-03 T  1.50943E-01 ||rhs|| =   6.55744E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.677018e-01
+64 144 iter     41 dt  3.77358E-03 T  1.54717E-01 ||rhs|| =   6.89883E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.749793e-01
+64 144 iter     41 dt  3.77358E-03 T  1.54717E-01 ||rhs|| =   6.48608E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.753117e-01
+Error in density Linf norm 9.682288e-01
+64 144 iter     42 dt  3.77358E-03 T  1.58491E-01 ||rhs|| =   6.76918E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+64 144 iter     42 dt  3.77358E-03 T  1.58491E-01 ||rhs|| =   6.43038E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.681732e-01
+64 144 iter     43 dt  3.77358E-03 T  1.62264E-01 ||rhs|| =   6.64271E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.750659e-01
+64 144 iter     43 dt  3.77358E-03 T  1.62264E-01 ||rhs|| =   6.39656E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.743398e-01
+Error in density Linf norm 9.676326e-01
+64 144 iter     44 dt  3.77358E-03 T  1.66038E-01 ||rhs|| =   6.52202E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+64 144 iter     44 dt  3.77358E-03 T  1.66038E-01 ||rhs|| =   6.39044E-02 ||Erhs|| = 0.00000E+00 cpu  2.00000E-02 cpu(ts) =  1.00000E-02 cpuleft =  9.00000E-02
+Error in density Linf norm 9.666955e-01
+64 144 iter     45 dt  3.77358E-03 T  1.69811E-01 ||rhs|| =   6.40916E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.732220e-01
+64 144 iter     45 dt  3.77358E-03 T  1.69811E-01 ||rhs|| =   6.41683E-02 ||Erhs|| = 0.00000E+00 cpu  2.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.654414e-01
+64 144 iter     46 dt  3.77358E-03 T  1.73585E-01 ||rhs|| =   6.30553E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.717924e-01
+64 144 iter     46 dt  3.77358E-03 T  1.73585E-01 ||rhs|| =   6.47908E-02 ||Erhs|| = 0.00000E+00 cpu  2.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.639415e-01
+64 144 iter     47 dt  3.77358E-03 T  1.77358E-01 ||rhs|| =   6.21184E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.701221e-01
+64 144 iter     47 dt  3.77358E-03 T  1.77358E-01 ||rhs|| =   6.57859E-02 ||Erhs|| = 0.00000E+00 cpu  2.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.682740e-01
+Error in density Linf norm 9.622585e-01
+64 144 iter     48 dt  3.77358E-03 T  1.81132E-01 ||rhs|| =   6.12813E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+64 144 iter     48 dt  3.77358E-03 T  1.81132E-01 ||rhs|| =   6.71470E-02 ||Erhs|| = 0.00000E+00 cpu  2.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.604476e-01
+64 144 iter     49 dt  3.77358E-03 T  1.84906E-01 ||rhs|| =   6.05385E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.663033e-01
+64 144 iter     49 dt  3.77358E-03 T  1.84906E-01 ||rhs|| =   6.88473E-02 ||Erhs|| = 0.00000E+00 cpu  2.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.642578e-01
+64 144 iter     50 dt  3.77358E-03 T  1.88679E-01 ||rhs|| =   7.08427E-02 ||Erhs|| = 0.00000E+00 cpu  2.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.585568e-01
+64 144 iter     50 dt  3.77358E-03 T  1.88679E-01 ||rhs|| =   5.98797E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.566272e-01
+64 144 iter     51 dt  3.77358E-03 T  1.92453E-01 ||rhs|| =   5.92914E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.621786e-01
+64 144 iter     51 dt  3.77358E-03 T  1.92453E-01 ||rhs|| =   7.30762E-02 ||Erhs|| = 0.00000E+00 cpu  2.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.546938e-01
+64 144 iter     52 dt  3.77358E-03 T  1.96226E-01 ||rhs|| =   5.87587E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.601006e-01
+64 144 iter     52 dt  3.77358E-03 T  1.96226E-01 ||rhs|| =   7.54824E-02 ||Erhs|| = 0.00000E+00 cpu  2.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.527858e-01
+64 144 iter     53 dt  3.77358E-03 T  2.00000E-01 ||rhs|| =   5.82665E-02 ||Erhs|| = 0.00000E+00 cpu  1.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+Error in density Linf norm 9.580530e-01
+64 144 iter     53 dt  3.77358E-03 T  2.00000E-01 ||rhs|| =   7.79922E-02 ||Erhs|| = 0.00000E+00 cpu  2.00000E-02 cpu(ts) =  0.00000E+00 cpuleft =  0.00000E+00
+ Exact error 1.344417e-01 
+[OUTPUT: DG-DG-MPI]
+ Exact error 1.436740e-01 
+[OUTPUT: DG-DG-MPI]
+[OUTPUT: DG-MPI] Running on mesh: ./mesh/advection64v2_2part.msh
+[OUTPUT: DG-MPI] Runtime of importing mesh: 0.012696 seconds
+[OUTPUT: DG-MPI] Time spent in RK 0.012128
+[OUTPUT: DG-MPI] Total runtime: 0.032218 seconds
+[OUTPUT: DG-MPI]
+This was process 1 out of 2
+[OUTPUT: DG-MPI] Running on mesh: ./mesh/advection64v2_2part.msh
+[OUTPUT: DG-MPI] Runtime of importing mesh: 0.011541 seconds
+[OUTPUT: DG-MPI] Time spent in RK 0.013181
+[OUTPUT: DG-MPI] Total runtime: 0.032480 seconds
+[OUTPUT: DG-MPI]
+This was process 2 out of 2

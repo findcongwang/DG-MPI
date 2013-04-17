@@ -11,3 +11,10 @@
 *.lai
 *.la
 *.a
+
+# Output
+bin/*.*
+*.pos
+*/test/res*
+*.*~
+*callgrind.out.*

@@ -1,0 +1,257 @@
+#include "mImportExport.h"
+#include "mDGMesh.h"
+#include "mEntity.h"
+#include <mpi.h>
+#include <stdio.h>
+#include <math.h>
+#include <time.h>
+#include <map>
+#include <cstdlib>
+
+extern void ShockTube (mDGMesh *theMesh, int);
+extern void OutFlow   (mDGMesh *theMesh, double mach, double angle, int wall, int);
+extern void DoubleMach (mDGMesh *theMesh, int wall, int);
+extern void ScalarPb  (mDGMesh *theMesh, int);
+extern void Suli (mDGMesh *theMesh, int);
+extern void RayleighTaylor  (mDGMesh *theMesh, int, int);
+extern void Burger (mDGMesh *theMesh,int);
+extern void Burger2D (mDGMesh *theMesh,int);
+extern void SuperVortex (mDGMesh *theMesh, int wall, int);
+extern void Cylinder (mDGMesh *theMesh, int wall, int);
+extern void Sphere (mDGMesh *theMesh, int wall, int);
+extern void FlowAroundAirfoil (mDGMesh *theMesh, int wall, int);
+extern void LinSystem (mDGMesh *theMesh, int);
+extern void ForwardFacingStep(mDGMesh *theMesh, int wall, int);
+extern void SphericalBlast (mDGMesh *theMesh,int wall, int order);
+extern void Riemann2D (mDGMesh *theMesh,int wall, int order);
+extern void TalkExample (mDGMesh *theMesh,int wall, int order);
+extern void DaleExample (mDGMesh *theMesh, int wall, int);
+
+timespec timer1load, timer2load, timertmp;
+double timeRK = 0;
+
+int numprocs, rank, myPartitionID;
+
+timespec diff(timespec start, timespec end);
+
+int main(int argc, char *argv[])
+{
+    MPI_Init(&argc,&argv);
+    MPI_Comm_size(MPI_COMM_WORLD, &numprocs);
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    myPartitionID = rank + 1;
+
+    //timer start
+    clock_gettime(CLOCK_MONOTONIC, &timer1load);
+
+  mImportExport io;
+  printf("reading the mesh ...\n");
+  clock_t t1 = clock();
+  mDGMesh *theMesh = new mDGMesh;
+  io.import(argv[1],theMesh);
+  clock_t t2 = clock();
+  printf("Mesh read in %f seconds\n", double (t2-t1)/CLOCKS_PER_SEC);
+  printf("creating connectivities ...\n");
+
+
+
+/*    printf("[OUTPUT: DG-SERIAL] Running on mesh: %s\n", argv[1]);
+    clock_gettime(CLOCK_MONOTONIC, &timer2load);
+    printf("[OUTPUT: DG-SERIAL] Runtime of importing mesh (before edges): %f seconds\n", 
+    diff(timer1load,timer2load).tv_sec + diff(timer1load,timer2load).tv_nsec * 0.000000001);
+    clock_gettime(CLOCK_MONOTONIC, &timertmp);*/
+
+
+  switch (atoi(argv[2]))
+    {
+    case 3:
+      printf("mesh read. %f seconds needed\n",(double)(t2-t1)/CLOCKS_PER_SEC);
+      t1 = clock();
+      getchar();
+      theMesh->createCellBoundaries(3,2);
+      t2 = clock();
+      printf("%d faces created %f seconds needed\n",theMesh->size(2),(double)(t2-t1)/CLOCKS_PER_SEC);
+      getchar();
+      t1 = clock();
+      theMesh->createCellBoundaries(2,1);
+      t2 = clock();
+      printf("%d edges created %f seconds needed\n",theMesh->size(1),(double)(t2-t1)/CLOCKS_PER_SEC);
+      getchar();
+      t1 = clock();
+
+	  int i;
+      for(i=0;i<3;i++)
+	{
+	  int key = -1;
+	  int NK = 0;
+	  for(mMesh::iter it = theMesh->begin(0);it != theMesh->end(0); it++)
+	    {
+	      mEntity *e = *it;
+	      if(key != e->getId())
+		{
+		  NK++;
+		}
+	    }
+	  printf("PHI(%d) = %12.5E\n",i,(double)(theMesh->size(i))/(double)(NK));
+	  NK = 0;
+	}
+      break;
+    default:
+      int dim = (theMesh->size(3) !=0)?3:2;
+   
+	  t1=clock();
+      theMesh->createCellBoundaries(dim,dim-1); //creating edges
+	  t2 = clock();
+      printf("Edges created in %e seconds\n", double (t2-t1)/CLOCKS_PER_SEC);
+
+
+       /* clock_gettime(CLOCK_MONOTONIC, &timer2load);
+        printf("[OUTPUT: DG-SERIAL] Runtime of creating edges: %f seconds\n", 
+            diff(timertmp,timer2load).tv_sec + diff(timertmp,timer2load).tv_nsec * 0.000000001);
+        clock_gettime(CLOCK_MONOTONIC, &timertmp);*/
+
+
+      t1=clock();
+	  theMesh->createConnections(dim-1,dim); //create poiters to cells from cell boundaries
+	  //      theMesh->createConnections(0,dim); //connect faces to vertices  // needed for VertLimiter
+	  // needed for reconstructing curved boundaries:
+
+	  theMesh->createConnections(0,dim-1);
+	  //if (dim==2) theMesh->createConnections(0,1);  //create pointers to edges from vertices   
+     // if (dim==3) theMesh->createConnections(1,2);   // create pointers to faces from edges 
+	  t2 = clock();
+      printf("Connections created in %e seconds\n", double (t2-t1)/CLOCKS_PER_SEC);
+
+
+
+       /* clock_gettime(CLOCK_MONOTONIC, &timer2load);
+        printf("[OUTPUT: DG-SERIAL] Runtime of creating connections: %f seconds\n", 
+            diff(timertmp,timer2load).tv_sec + diff(timertmp,timer2load).tv_nsec * 0.000000001);
+        clock_gettime(CLOCK_MONOTONIC, &timertmp);*/
+
+
+
+       theMesh->setPeriodicBC(dim);
+
+
+
+      /*  clock_gettime(CLOCK_MONOTONIC, &timer2load);
+        printf("[OUTPUT: DG-SERIAL] Runtime of setPeriodicBC: %f seconds\n", 
+            diff(timertmp,timer2load).tv_sec + diff(timertmp,timer2load).tv_nsec * 0.000000001);
+        clock_gettime(CLOCK_MONOTONIC, &timertmp);*/
+
+
+	  printf("%d cells \n", theMesh->size(dim));
+      printf("%d boundaries ...\n",theMesh->size(dim-1));
+      break;
+    }
+
+    //collect timer info
+    clock_gettime(CLOCK_MONOTONIC, &timer2load);
+
+/*    //stats
+    mMesh::iter it;
+    const mMesh::iter mesh_begin = theMesh->begin(2);
+    const mMesh::iter mesh_end=theMesh->end(2);
+    int p1 = 0;
+    int p2 = 0;
+    int p3 = 0;
+    int bordering = 0;
+    for(it = mesh_begin;it != mesh_end;++it)
+    {
+        mEntity *m = (*it);
+        if(m->partition == 1) p1++;
+        if(m->partition == 2) p2++;
+        if(m->partition == 3) p3++;
+        if(m->neighbours.size() > 0) bordering++;
+    }
+    printf("p1: %d, p2: %d, p3: %d, bordering: %d\n", p1, p2, p3, bordering);
+    MPI_Finalize();
+    exit(0);
+*/
+
+  printf("DG begins ...\n");
+  
+  switch (atoi(argv[2]))
+    {
+    case 1:
+      ShockTube(theMesh,atoi(argv[3]));
+      break;
+    case 2:
+      OutFlow (theMesh,3.0,0.0,200,atoi(argv[3]));
+      break;
+	case 9:
+      LinSystem(theMesh,atoi(argv[3]));
+      break;
+    case 8:
+      Suli(theMesh,atoi(argv[3]));
+      break;
+    case 4:
+      ScalarPb (theMesh,atoi(argv[3]));
+      break;
+    case 5:
+      RayleighTaylor (theMesh,200,atoi(argv[3]));
+      break;
+    case 6:
+      Burger(theMesh,atoi(argv[3]));
+      break;
+    case 7:
+      Burger2D(theMesh,atoi(argv[3]));
+      break;
+    case 12:
+      DoubleMach(theMesh,200,atoi(argv[3]));
+      break;
+    case 13:
+      SuperVortex(theMesh,200,atoi(argv[3]));
+      break; 
+    case 14:
+      Cylinder(theMesh,200,atoi(argv[3]));
+      break; 
+	case 15:
+      FlowAroundAirfoil(theMesh,200,atoi(argv[3]));
+      break; 
+    case 16:
+      ForwardFacingStep(theMesh,200,atoi(argv[3]));
+      break;
+    case 17:
+      SphericalBlast(theMesh,200,atoi(argv[3]));
+      break;
+	case 18:
+      Riemann2D(theMesh,200,atoi(argv[3]));
+      break;
+	case 19:
+      TalkExample(theMesh,200,atoi(argv[3]));
+      break;
+    case 20:
+      Sphere(theMesh,200,atoi(argv[3]));
+      break;
+	case 88:
+		DaleExample(theMesh,200,atoi(argv[3]));
+		break;
+    }
+
+    //[OUTPUT: DG-MPI]
+    printf("[OUTPUT: DG-DG-MPI]\n");
+    printf("[OUTPUT: DG-MPI] Running on mesh: %s\n", argv[1]);
+    printf("[OUTPUT: DG-MPI] Runtime of importing mesh: %f seconds\n", 
+            diff(timer1load,timer2load).tv_sec + diff(timer1load,timer2load).tv_nsec * 0.000000001);
+    /*printf("[OUTPUT: DG-MPI] Average runtime of computeVolumeContribution: %f seconds\n", 
+        timeComputeVolumeCalls / numComputeVolumeCalls);
+    printf("[OUTPUT: DG-MPI] Average runtime of computeBoundaryContribution: %f seconds\n", 
+        timeComputeBoundaryCalls / numComputeBoundaryCalls);
+    printf("[OUTPUT: DG-MPI] Time spent in Volume: %f number of instances called: %d\n", timeComputeVolumeCalls, numComputeVolumeCalls);
+    printf("[OUTPUT: DG-MPI] Time spent in Boundary: %f number of instances called: %d\n", timeComputeBoundaryCalls, numComputeBoundaryCalls);
+*/
+    printf("[OUTPUT: DG-MPI] Time spent in RK %f\n", timeRK);
+    clock_gettime(CLOCK_MONOTONIC, &timer2load);
+
+    printf("[OUTPUT: DG-MPI] Total runtime: %f seconds\n", 
+            diff(timer1load,timer2load).tv_sec + diff(timer1load,timer2load).tv_nsec * 0.000000001);
+    printf("[OUTPUT: DG-MPI]\n");
+
+    printf("This was process %d out of %d\n", rank+1, numprocs);
+
+    MPI_Finalize();
+    return 0;
+}
+
