@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#PBS -l nodes=8:ppn=8
+#PBS -l walltime=2:00:00
+#PBS -N mpi-test
+cd $SCRATCH/DG-MPI/bin/
+
+eval "module load openmpi"
+eval "mpirun -np 128 ./DG-MPI ../mesh/advection16384_128parts.msh 4 1"
